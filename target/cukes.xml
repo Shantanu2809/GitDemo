@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="87.633">
+<testcase classname="Search and Place the order for Products" name="Search Experience for product search in both home and offers page" time="24.394">
+<system-out><![CDATA[Given User is on GreenCart Landing page.....................................passed
+When User searched with shortname Tom and extracted actual name of product..passed
+Then User searched for same shortname Tom in offers page....................passed
+And validate product name in offers page matches with Landing Page..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and Place the order for Products" name="Search Experience for product search in both home and offers page 2" time="20.209">
+<failure message="expected [Beetroot] but found [No data]" type="java.lang.AssertionError"><![CDATA[Given User is on GreenCart Landing page.....................................passed
+When User searched with shortname Beet and extracted actual name of product.passed
+Then User searched for same shortname Beet in offers page...................passed
+And validate product name in offers page matches with Landing Page..........failed
+
+StackTrace:
+java.lang.AssertionError: expected [Beetroot] but found [No data]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.GreenKartOfferPageStepDefinition.validate_product_name_in_offers_page_matches_with_landing_page(GreenKartOfferPageStepDefinition.java:65)
+	at ✽.validate product name in offers page matches with Landing Page(file:///D:/Users/Temp/Desktop/CucumberMiniProjectFramework/src/test/java/features/searchProduct.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="Search and Place the order for Products" name="Search Experience for product search in both home and offers page 3" time="20.162">
+<failure message="expected [Cucumber] but found [No data]" type="java.lang.AssertionError"><![CDATA[Given User is on GreenCart Landing page.....................................passed
+When User searched with shortname Cucu and extracted actual name of product.passed
+Then User searched for same shortname Cucu in offers page...................passed
+And validate product name in offers page matches with Landing Page..........failed
+
+StackTrace:
+java.lang.AssertionError: expected [Cucumber] but found [No data]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.GreenKartOfferPageStepDefinition.validate_product_name_in_offers_page_matches_with_landing_page(GreenKartOfferPageStepDefinition.java:65)
+	at ✽.validate product name in offers page matches with Landing Page(file:///D:/Users/Temp/Desktop/CucumberMiniProjectFramework/src/test/java/features/searchProduct.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="Search and Place the order for Products" name="Search Experience for product search in both home and offers page 4" time="22.57">
+<system-out><![CDATA[Given User is on GreenCart Landing page.....................................passed
+When User searched with shortname Pot and extracted actual name of product..passed
+Then User searched for same shortname Pot in offers page....................passed
+And validate product name in offers page matches with Landing Page..........passed
+]]></system-out>
+</testcase>
+</testsuite>

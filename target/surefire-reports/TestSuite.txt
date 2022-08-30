@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 89.861 s <<< FAILURE! - in TestSuite
+cucumberOptions.TestNGTestRunner.runScenario["Search Experience for product search in both home and offers page", "Search and Place the order for Products"](2)  Time elapsed: 20.221 s  <<< FAILURE!
+java.lang.AssertionError: expected [Beetroot] but found [No data]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.GreenKartOfferPageStepDefinition.validate_product_name_in_offers_page_matches_with_landing_page(GreenKartOfferPageStepDefinition.java:65)
+	at ✽.validate product name in offers page matches with Landing Page(file:///D:/Users/Temp/Desktop/CucumberMiniProjectFramework/src/test/java/features/searchProduct.feature:8)
+
+cucumberOptions.TestNGTestRunner.runScenario["Search Experience for product search in both home and offers page", "Search and Place the order for Products"](3)  Time elapsed: 20.173 s  <<< FAILURE!
+java.lang.AssertionError: expected [Cucumber] but found [No data]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.GreenKartOfferPageStepDefinition.validate_product_name_in_offers_page_matches_with_landing_page(GreenKartOfferPageStepDefinition.java:65)
+	at ✽.validate product name in offers page matches with Landing Page(file:///D:/Users/Temp/Desktop/CucumberMiniProjectFramework/src/test/java/features/searchProduct.feature:8)
+
